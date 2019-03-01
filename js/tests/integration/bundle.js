@@ -1,7 +1,9 @@
 import 'popper.js'
-import bootstrap from '../../../dist/js/bootstrap'
+import {
+  Tooltip
+} from '../../../dist/js/bootstrap.esm'
 
 window.addEventListener('load', () => {
   Array.from(document.querySelectorAll('[data-toggle="tooltip"]'))
-    .map((tooltipNode) => new bootstrap.Tooltip(tooltipNode))
+    .map((tooltipNode) => new Tooltip(tooltipNode))
 })
